@@ -1,0 +1,11 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd" layout="2columns-left"> 
+	 <head>
+        <css src="DCKAP_Contactform::css/form.css"/>
+    </head>
+<body>
+    <referenceContainer name="content">
+        <block   class="DCKAP\Contactform\Block\Contactform" name="contactform" template="contactform.phtml" ifconfig="form_section/form_group_general/status">
+        </block>
+    </referenceContainer>
+</body>
+</page>

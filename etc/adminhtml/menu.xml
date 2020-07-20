@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+  * @author     DCKAP <extensions@dckap.com>
+  * @package    DCKAP_Contactform
+  * @copyright  Copyright (c) 2016 DCKAP Inc (http://www.dckap.com)
+  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+  */
+ -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+
+        <add id="DCKAP_Contactform::Contactforms" title="DCKAP" module="DCKAP_Contactform" sortOrder="40"
+             parent="Magento_Customer::customer" resource="DCKAP_Contactform::Contactforms"/>
+
+        <add id="DCKAP_Contactform::Contactforms_addform" title="Contact Form" module="DCKAP_Contactform" sortOrder="10"
+             parent="DCKAP_Contactform::Contactforms" action="formadmin/form/index"
+             resource="DCKAP_Contactform::Contactforms_addform"/>
+        <add id="DCKAP_Contactform::Contactforms_settings" title="Settings" module="DCKAP_Contactform" sortOrder="10"
+             parent="DCKAP_Contactform::Contactforms" action="adminhtml/system_config/edit/section/form_section"
+             resource="DCKAP_Contactform::Contactforms_settings"/>
+
+
+    </menu>
+</config>

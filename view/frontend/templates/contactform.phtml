@@ -1,0 +1,44 @@
+<div class ="dc-wrapper">
+<div class="dc-contact-form">
+<a class ="dc_btn" href ="javascript:void(0);">
+<img class="dc_img" src="<?php echo $block->getViewFileUrl('DCKAP_Contactform::images/contact.png'); ?>" /></a>
+<div class ="inner-wrap">
+<div class ="inner-wrap-img">
+<img class="dc_loading_img" src="<?php echo $block->getViewFileUrl('DCKAP_Contactform::images/processing.gif'); ?>" />
+</div>
+<div class ="success-alert">
+<h3>Thank you for contacting us!</h3>
+<p>We have received your message and will get in touch with you shortly.</p>
+</div>
+<form id="dckap_contactform" name="addnewcustomer" method="POST" action="">
+<div class="dckap_response"></div>
+
+	<div class="dc_row">
+		<!-- <label for="name">Your name:</label><br /> -->
+		<input id="cf-name" class="dc_text_box" name="name" type="text" value="" size="30" placeholder="Name*" maxlength="60"/><br />
+		<span class="input-name sr-error"></span>
+	</div>
+	<div class="dc_row">
+	<!-- 	<label for="email">Your email:</label><br /> -->
+		<input id="cf-email" class="dc_text_box" name="email" type="text" value="" size="30" placeholder="Email*" maxlength="65"/><br />
+		<span class="input-emailid sr-error"></span>
+	</div>
+	<div class="dc_row">
+		<!-- <label for="contactnumber">Your Contact Number:</label><br /> -->
+		<input id="cf-contact" class="dc_text_box" name="contact_number" type="text" value="" size="30" placeholder="Contact Number*" maxlength="50"  /><br />
+		<span class="input-contact sr-error"></span>
+	</div>
+	<div class="dc_row">
+		<!-- <label for="message">Your message:</label><br /> -->
+		<textarea id="cf-message" class="dc_text_box" name="message" rows="7" cols="30"  placeholder ="Comments*" maxlength="500"></textarea><br />
+		<span class="input-message sr-error"></span>
+	</div>
+	<input type="hidden" id="dc_contact_url" value="<?php echo $block->getUrl('contactform/index/save');?>" />
+ 	<div class="dc_submit_btn">
+       <input  type="submit" class ="button btn-cart" value= "Send Message" />
+       </div>
+
+</form>
+</div>						
+</div>
+</div>
