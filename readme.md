@@ -26,26 +26,26 @@ Enterprise​ ​2.1x​ ​versions
 **Step​ ​2:​** ​ ​Create​ ​a​ ​directory​ ​​`app\code\DCKAP\ContactForm​​` ​in​ ​your Magento​ ​root​ ​directory​ ​and​ ​unzip​ ​here.
 
 **Step​ ​3:​** ​​ Disable​ ​the​ ​cache​ ​to​ ​avoid​ ​flushing​ ​the​ ​cache,​ ​very​ ​often.​ ​It​ ​may affect​ ​performance​ ​for​ ​a​ ​while.​ ​However,​ ​you​ ​can​ ​skip​ ​this​ ​step.​ ​If​ ​you​ ​do so,​ ​clean​ ​the​ ​cache​ ​manually​ ​whenever​ ​needed.
-`php​ ​bin/magento​ ​cache:disable
-`
-**Step​ ​4:**​ ​ ​Enter​ ​the​ ​following​ ​at​ ​the​ ​command​ ​line​ ​to​ ​enable​ ​the​ ​module.
+`php​ ​bin/magento​ ​cache:disable `
+
+**Step​ ​4:** ​ ​Enter​ ​the​ ​following​ ​at​ ​the​ ​command​ ​line​ ​to​ ​enable​ ​the​ ​module.
 `php​ ​bin/magento​ ​module:enable​ ​DCKAP_ContactForm`
 
 **Step​ ​5:​** ​ ​Enter​ ​the​ ​following​ ​at​ ​the​ ​command​ ​line​ ​to​ ​run​ ​the​ ​setup​ ​scripts.
 `php​ ​bin/magento​ ​setup:upgrade`
 
-**Step​ ​6:**​ ​ ​Enter​ ​the​ ​following​ ​at​ ​the​ ​command​ ​line​ ​if​ ​the​ ​mode​ ​is​ ​set​ ​to default​ ​or​ ​production​ ​to​ ​deploy​ ​all​ ​the​ ​static​ ​files.
+**Step​ ​6:​** ​ ​Enter​ ​the​ ​following​ ​at​ ​the​ ​command​ ​line​ ​if​ ​the​ ​mode​ ​is​ ​set​ ​to default​ ​or​ ​production​ ​to​ ​deploy​ ​all​ ​the​ ​static​ ​files.
 `php​ ​bin/magento​ ​setup:static-content:deploy`
 
-**Step​ ​7:**​ ​​ Clear​ ​the​ ​cache​ ​to​ ​configure​ ​the​ ​settings​ ​in​ ​the backend​ ​(if​ ​you skipped​ ​Step3)
+**Step 7:** ​​ Clear​ ​the​ ​cache​ ​to​ ​configure​ ​the​ ​settings​ ​in​ ​the backend​ ​(if​ ​you skipped​ ​Step3)
 `php​ ​bin/magento​ ​cache:clean`
 
-**Step​ ​8:**​ ​​ Log in​ ​to​ ​Magento​ ​backend​ ​and​ ​navigate​ ​to​ `​​Store​ ​>​ ​Configuration >​ ​DCKAP​ ​>​ ​Contact​ ​Form​ `​ ​​ and​ ​configure​ ​the​ ​module.
+**Step​ ​8:​** Log in​ ​to​ ​Magento​ ​backend​ ​and​ ​navigate​ ​to​ `​​Store​ ​>​ ​Configuration >​ ​DCKAP​ ​>​ ​Contact​ ​Form​ `​ ​​ and​ ​configure​ ​the​ ​module.
 
-**Step​ ​9:**​ ​​ Clear​ ​the​ ​cache​ ​to​ ​apply​ ​all​ ​the​ ​configurations​ ​(if​ ​you​ ​skipped Step3)
+**Step 9:​** ​​ Clear​ ​the​ ​cache​ ​to​ ​apply​ ​all​ ​the​ ​configurations​ ​(if​ ​you​ ​skipped Step3)
 `php​ ​bin/magento​ ​cache:clean`
 
-**Step​ ​10:**​ ​​ Enable​ ​the​ ​cache​ ​once​ ​everything​ ​is​ ​done.​ ​Ignore,​ ​if​ ​you​ ​skip Step3.
+**Step​ ​10:​** ​​ Enable​ ​the​ ​cache​ ​once​ ​everything​ ​is​ ​done.​ ​Ignore,​ ​if​ ​you​ ​skip Step3.
 `php​ ​bin/magento​ ​cache:disable`
 
 That’s​ ​it.​ ​You​ ​are​ ​done.​ ​​If​ ​you​ ​still​ ​face​ ​any​ ​issues​ ​while​ ​installing,​ ​contact​ ​us​ ​at
